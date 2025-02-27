@@ -9,19 +9,21 @@ const newArtistArray = artistArray.map((currentArtistObj) => {
   return newArtistObj;
 });
 
-const newSongsArray = songsArray.map((currentSongsObj) => {
-  const newSongsObj = { ...currentSongsObj };
-  delete newSongsObj.id;
+const newSongsArray = songsArray.map((currentSongObj) => {
+  const newSongObj = { ...currentSongObj };
+  delete newSongObj.id;
 
-  return newSongsObj;
+  return newSongObj;
 });
 
 const responseSongs = await db.collection("songs").insertMany(newSongsArray);
-const responseArtist = await db
+const responseArtists = await db
   .collection("artists")
   .insertMany(newArtistArray);
 
-  console.log(responseSongs);
-  console.log(responseArtist);
+console.log(responseSongs);
+console.log(responseArtists);
 
+// console.log(newArtistArray);
 // console.log(newSongsArray);
+// console.log(songsArray);

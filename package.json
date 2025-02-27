@@ -1,7 +1,6 @@
 {
-  "name": "meu-gabarito-da-aula-4",
+  "name": "deploy",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
@@ -9,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CahTarine/spotify-hashtag.git"
+    "url": "git+https://github.com/fullstackjornada/deploy-jornada-full-stack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/CahTarine/spotify-hashtag/issues"
+    "url": "https://github.com/fullstackjornada/deploy-jornada-full-stack/issues"
   },
-  "homepage": "https://github.com/CahTarine/spotify-hashtag#readme"
+  "homepage": "https://github.com/fullstackjornada/deploy-jornada-full-stack#readme",
+  "description": ""
 }
