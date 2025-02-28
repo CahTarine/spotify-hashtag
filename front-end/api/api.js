@@ -1,7 +1,9 @@
 // Fetch ou Axios
+
 import axios from "axios";
 
-const URL = "http://localhost:3001";
+// const NODE_ENV = process.env.NODE_ENV;
+const URL = "https://spotify-hashtag.onrender.com";
 
 const responseArtists = await axios.get(`${URL}/artists`);
 const responseSongs = await axios.get(`${URL}/songs`);
